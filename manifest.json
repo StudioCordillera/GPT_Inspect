@@ -1,0 +1,6 @@
+{
+  "name": "HTML Inspector",
+  "version": "1.0.0",
+  "description": "Allows the OpenAI Plugins Alpha model to inspect HTML elements on a local page.",
+  "permissions": ["tabs"]
+}
