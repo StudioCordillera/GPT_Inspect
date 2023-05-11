@@ -1,6 +1,21 @@
 {
-  "name": "HTML Inspector",
-  "version": "1.0.0",
-  "description": "Allows the OpenAI Plugins Alpha model to inspect HTML elements on a local page.",
-  "permissions": ["tabs"]
+  "manifest_version": 2,
+  "name": "GPT_Inspect",
+  "description": "This plugin allows you to inspect HTML elements on your local page.",
+  "version": "1.0",
+  "author": "Studio Cordillera",
+  "homepage_url": "https://github.com/StudioCordillera/GPT_Inspect",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*"
+      ],
+      "js": [
+        "gpt_inspect.js"
+      ],
+      "css": [
+        "gpt_inspect.css"
+      ]
+    }
+  ]
 }
